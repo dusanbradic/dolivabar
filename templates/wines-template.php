@@ -4,7 +4,7 @@
     <!-- ovaj -->
     <div class="relative flex object-cover overflow-hidden bg-no-repeat bg-cover mb-4">
         <div class="group relative">
-            <img src="assets/images/vino1.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110 group-hover:borders"  alt="flasa vina">
+            <img src="assets/images/1.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110 group-hover:borders"  alt="flasa vina">
             <div class="absolute inset-0 flex items-center justify-center invisible group-hover:visible">
                 <ul>
                     <li>
@@ -26,7 +26,7 @@
     </div>
     <div class="relative flex object-cover overflow-hidden bg-no-repeat bg-cover mb-4">
         <div class="group relative">
-            <img src="assets/images/Vino2.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110"  alt="flasa vina">
+            <img src="assets/images/2.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110"  alt="flasa vina">
             <div class="absolute inset-0 flex items-center justify-center invisible group-hover:visible">
                 <ul>
                     <li>
@@ -48,7 +48,7 @@
     </div>
     <div class="relative flex object-cover overflow-hidden bg-no-repeat bg-cover mb-4">
         <div class="group relative">
-            <img src="assets/images/vino3.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110"  alt="flasa vina">
+            <img src="assets/images/3.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110"  alt="flasa vina">
             <div class="absolute inset-0 flex items-center justify-center invisible group-hover:visible">
                 <ul>
                     <li>
@@ -70,7 +70,7 @@
     </div>
     <div class="relative flex object-cover overflow-hidden bg-no-repeat bg-cover mb-4">
         <div class="group relative">
-            <img src="assets/images/Vino4.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110"  alt="flasa vina">
+            <img src="assets/images/4.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110"  alt="flasa vina">
             <div class="absolute inset-0 flex items-center justify-center invisible group-hover:visible">
                 <ul>
                     <li>
@@ -92,7 +92,7 @@
     </div>
     <div class="relative flex object-cover overflow-hidden bg-no-repeat bg-cover mb-4">
         <div class="group relative">
-            <img src="assets/images/vino5.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110"  alt="flasa vina">
+            <img src="assets/images/5.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110"  alt="flasa vina">
             <div class="absolute inset-0 flex items-center justify-center invisible group-hover:visible">
                 <ul>
                     <li>
@@ -160,9 +160,8 @@
         <button onclick="loadMore()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Load More</button>
     </div>
 </div>
-
 <script>
-    var totalImages = 7; // Total number of images available
+    var totalImages = 8; // Total number of images available
     var imagesLoaded = 5; // Initial number of images loaded
     var loadMoreBtn = document.getElementById('load-more-btn');
     var wineGallery = document.getElementById('wine-gallery');
@@ -171,7 +170,7 @@
     function loadMore() {
         for (var i = imagesLoaded; i < totalImages; i++) {
             var imageIndex = i + 1; // Assuming image names are indexed from 1
-            var imageSrc = 'assets/images/vino' + imageIndex + '.png'; // Image source
+            var imageSrc = 'assets/images/' + imageIndex + '.png'; // Image source
             var wineItem = document.createElement('div');
             wineItem.className = 'wine-item relative flex object-cover overflow-hidden bg-no-repeat bg-cover mb-4';
             wineItem.innerHTML = `
@@ -192,3 +191,34 @@
         }
     }
 </script>
+<!--old <script>
+    var totalImages = 7; // Total number of images available
+    var imagesLoaded = 5; // Initial number of images loaded
+    var loadMoreBtn = document.getElementById('load-more-btn');
+    var wineGallery = document.getElementById('wine-gallery');
+
+    // Function to load more images
+    function loadMore() {
+        for (var i = imagesLoaded; i < totalImages; i++) {
+            var imageIndex = i + 1; // Assuming image names are indexed from 1
+            var imageSrc = 'assets/images/vino' + imageIndex + '.png'; // Image source
+            var wineItem = document.createElement('div');
+            wineItem.className = 'wine-item relative flex object-cover overflow-hidden bg-no-repeat bg-cover mb-4';
+            wineItem.innerHTML = `
+                <div class="group relative">
+                    <img src="${imageSrc}" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110 group-hover:borders"  alt="flasa vina">
+                    <div class="absolute inset-0 flex items-center justify-center invisible group-hover:visible">
+                        Wine details go here -->
+                    <!-- </div>
+                </div>
+            `;
+            wineGallery.insertBefore(wineItem, loadMoreBtn);
+            imagesLoaded++;
+
+            if (imagesLoaded === totalImages) {
+                loadMoreBtn.style.display = 'none'; // Hide the load more button when all images are loaded
+                break;
+            }
+        }
+    }
+</script> -->

@@ -3,7 +3,7 @@
 
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
     <!-- Event Card 1 -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
+    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-wine-500">
         <h2 class="text-xl font-semibold mb-2">Event 1</h2>
         <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna at velit commodo interdum nec nec diam.</p>
         <p class="text-gray-500 mt-2">Date: January 20, 2024</p>
