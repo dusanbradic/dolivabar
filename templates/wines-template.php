@@ -6,7 +6,7 @@
         <div class="group relative">
             <img src="assets/images/1.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110 group-hover:borders"  alt="flasa vina">
             <div class="absolute inset-0 flex items-center justify-center invisible group-hover:visible">
-                <ul>
+                <ul class="text-center">
                     <li>
                         <p><strong>Proizvodjac:</strong> Milanovi vinogradi</p>
                     </li>
@@ -28,7 +28,7 @@
         <div class="group relative">
             <img src="assets/images/2.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110"  alt="flasa vina">
             <div class="absolute inset-0 flex items-center justify-center invisible group-hover:visible">
-                <ul>
+                <ul class="text-center>
                     <li>
                         <p><strong>Proizvodjac:</strong> Milanovi vinogradi</p>
                     </li>
