@@ -1,12 +1,14 @@
 <p class="text-5xl my-4">Featured Wines</p>
 <p class="mb-4 text-xl">Discover our carefully selected wines that embody the essence of craftsmanship and quality.</p>
-<div id="wine-gallery" class="grid grid-cols-2 lg:grid-cols-5 gap-2 justify-items-center">
+<div id="wine-gallery" class="grid grid-cols-2 lg:grid-cols-5 gap-1 md:gap-0 justify-items-center">
     <!-- ovaj -->
-    <div class="relative flex object-cover overflow-hidden bg-no-repeat bg-cover mb-4">
+    <div class="relative flex object-cover overflow-hidden bg-no-repeat bg-cover mb-4 rounded-lg ">
         <div class="group relative">
-            <img src="assets/images/1.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110 group-hover:borders"  alt="flasa vina">
-            <div class="absolute inset-0 flex items-center justify-center invisible group-hover:visible">
+            <img src="assets/images/1.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-30" alt="flasa vina">
+            <div class="absolute inset-0 flex items-center justify-center invisible group-hover:visible group-hover:border group-hover:border-rose-900">
                 <ul class="text-center">
+                    <li class="flex justify-center items-center">
+                        <img src="assets/images/dolivabarlogo.png" class="w-16 h-16" alt="Doliva bar Logo"/></li>
                     <li>
                         <p><strong>Proizvodjac:</strong> Milanovi vinogradi</p>
                     </li>
@@ -17,8 +19,6 @@
                         <p><strong>Region:</strong> Backi</p>
                     <li>
                         <p><strong>Cena:</strong> $29.99</p>
-                    <li>
-                        <p><strong>Proizvodjac:</strong> Milanovi vinogradi</p>
                     </li>
                 </ul>
             </div>
@@ -28,7 +28,9 @@
         <div class="group relative">
             <img src="assets/images/2.png" class="w-full h-80 object-cover transition duration-500 ease-in-out group-hover:scale-110"  alt="flasa vina">
             <div class="absolute inset-0 flex items-center justify-center invisible group-hover:visible">
-                <ul class="text-center>
+                <ul class="text-center">
+                    <li class="flex justify-center items-center">
+                        <img src="assets/images/dolivabarlogo.png" class="w-16 h-16" alt="Doliva bar Logo"/></li>
                     <li>
                         <p><strong>Proizvodjac:</strong> Milanovi vinogradi</p>
                     </li>
